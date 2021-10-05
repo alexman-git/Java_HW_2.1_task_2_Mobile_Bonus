@@ -2,9 +2,10 @@ public class Main {
     public static void main(String[] args) {
         int currentBalance = 100;
         int addSum = 2222;
-        int totalBalance = currentBalance + addSum;
+        int newBalance = currentBalance + addSum;
         byte oneBonus = 100;
-        int totalBonus = (totalBalance - currentBalance)/oneBonus;
+        int totalBonus = (newBalance - currentBalance)/oneBonus;
+        int totalBalance = newBalance + totalBonus;
         if (addSum < 1000) {
             totalBonus = 0;
         }
